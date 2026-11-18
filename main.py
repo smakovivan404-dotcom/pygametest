@@ -21,13 +21,15 @@ while True:
     if key[pygame.K_LEFT]:
         player[0] -= 5
     if key[pygame.K_RIGHT]:
-        player[0] -= 5
+        player[0] += 5
     if key[pygame.K_UP]:
         player[1] -= 5
     if key[pygame.K_DOWN]:
-        player[1] -= 5
+        player[1] += 5
 
     pygame.draw.rect(screen, BLACK, player)
     pygame.display.update()
+
+
 
 
